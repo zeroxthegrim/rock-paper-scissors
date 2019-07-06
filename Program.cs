@@ -33,8 +33,7 @@ namespace Rock_Paper_Scissors
                     Console.WriteLine("\nYour choice: {0},  AI choice: {1}", playerChoice.ToUpper(), aiChoice.ToUpper());
                     Console.WriteLine("Draw;");
                     Console.WriteLine("Your score: {0},  AI score: {1}", playerScore, aiScore);
-                    continue;
-                    
+                    continue; 
                 }
                 else if (ChoosingWinner(playerChoice, aiChoice, choices) == 0)
                 {
@@ -105,28 +104,23 @@ namespace Rock_Paper_Scissors
             }
             else if (playerChoice == "rock" && aiChoice == "scissors")
             {
-                return 1;
-                
+                return 1;   
             }
             else if (playerChoice == "rock" && aiChoice == "paper")
             {
                 return 0;
-               
             }
             else if (playerChoice == "scissors" && aiChoice == "rock")
             {
-                return 0;
-                
+                return 0; 
             }
             else if (playerChoice == "scissors" && aiChoice == "paper")
             {
-                return 1;
-                
+                return 1; 
             }
             else if (playerChoice == "paper" && aiChoice == "rock")
             {
-                return 1;
-                
+                return 1;  
             }
             else if (playerChoice == "paper" && aiChoice == "scissors")
             {
